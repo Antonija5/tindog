@@ -15,13 +15,14 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/stayles.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-
 
   <style>
     body{
@@ -41,6 +42,10 @@ h1{
     line-height: 1.5;
 }
 
+h3{
+    font-family: "Montserrat";
+    font-weight: bolder;
+}
 
 
 p{
@@ -53,10 +58,14 @@ p{
 
 /* Navigation bar */
 
-.navbar{
-    padding: 0 0 4.5rem;
-}
 
+
+
+.navbar-brand{
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
 
 
 
@@ -78,10 +87,6 @@ p{
 
 
 
-
-#title{
-  background-color:#ff4c68;
-}
 #selection{
 font-family:"Montserrat-Black";
 font-size:3rem;
@@ -90,7 +95,25 @@ color:white;
 
 }
 
+/* Features section */
 
+#features{
+    padding: 7% 15%;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+.icon{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.icon:hover{
+    color: #ff4c68;
+}
 
 
 
@@ -111,8 +134,10 @@ color:white;
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      
+        <ul class="nav navbar-nav navbar-right">
           <li class="nav-item">
+            
               <a class="nav-link" href="">Contact</a>
           </li>
           <li class="nav-item">
@@ -121,10 +146,11 @@ color:white;
           <li class="nav-item">
               <a class="nav-link" href="">Download</a>
           </li>
+          </ul>
       </ul>
    </div>
   </nav>
-
+  
     <!-- Title -->
 
     <div class="row">
@@ -158,32 +184,34 @@ color:white;
 
   <!-- Features -->
 
-
-
   <section id="features">
 
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+        <h3>Easy to use.</h3>
+        <p>So easy to use, even your dog could do it.</p>
+        
+      </div>
+  
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3>Elite Clientele</h3>
+        <p>We have all the dogs, the greatest dogs.</p>     
+      </div>
+  
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3>Guaranteed to work.</h3>
+        <p>Find the love of your dog's life or your money back.</p>
+      </div>
+    </div>
 
 
-    <h3>Easy to use.</h3>
 
-    <p>So easy to use, even your dog could do it.</p>
+</section>
 
-
-
-    <h3>Elite Clientele</h3>
-
-    <p>We have all the dogs, the greatest dogs.</p>
-
-
-
-    <h3>Guaranteed to work.</h3>
-
-    <p>Find the love of your dog's life or your money back.</p>
-
-
-
-  </section>
-
+ 
 
 
 
@@ -198,7 +226,7 @@ color:white;
 
     <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
 
-    <img src="images/dog-img.jpg" alt="dog-profile">
+    <img src="dog-img.jpg" alt="dog-profile">
 
     <em>Pebbles, New York</em>
 
@@ -224,13 +252,13 @@ color:white;
 
   <section id="press">
 
-    <img src="images/techcrunch.png" alt="tc-logo">
+    <img src="techcrunch.png" alt="tc-logo">
 
-    <img src="images/tnw.png" alt="tnw-logo">
+    <img src="tnw.png" alt="tnw-logo">
 
-    <img src="images/bizinsider.png" alt="biz-insider-logo">
+    <img src="bizinsider.png" alt="biz-insider-logo">
 
-    <img src="images/mashable.png" alt="mashable-logo">
+    <img src="mashable.png" alt="mashable-logo">
 
 
 
