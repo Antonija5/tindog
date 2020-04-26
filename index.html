@@ -11,15 +11,19 @@
   <meta charset="utf-8">
 
   <title>TinDog</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet"> 
+  <meta charset="utf-8">
+  <title>TinDog</title>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi+2&display=swap" rel="stylesheet"> 
+  <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/stayles.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-<link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 
+ 
 <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
 
@@ -39,7 +43,7 @@
 }
 
 h1{
-    font-family: "Montserrat";
+    font-family:"Montserrat";
     font-weight: bolder;
     font-size: 3.5rem;
     line-height: 1.5;
@@ -175,6 +179,24 @@ text-align: center;
 padding: 3% 2%;
 
 }
+
+/* CTA section   */
+#cta{
+background-color: #ff4c68;
+
+padding: 7% 15%;
+
+}
+.cta-heading{
+  font-family: "Montserrat-Black";
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+
+
+
+
 @media(max-width:1028px){
 #title{
   text-align: center;
@@ -188,7 +210,24 @@ padding: 3% 2%;
 }
 
 
-
+#cta{
+    background-color: #ff4c68;
+    color: #fff;
+    padding: 7% 15%;
+    text-align: center;
+  }
+  .roza{
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+  #footer{
+    padding: 7% 15%;
+    text-align: center;
+  }
+  .ikone{
+    margin: 20px 10px;
+  }
 
 
 
@@ -199,34 +238,30 @@ padding: 3% 2%;
 
 
 
-<body>
-  <section id="title">
-
-    <div class="container-fluid">
-
+<body><section id="title">
+<div class="container-fluid">
     <!-- Nav Bar -->
-    <nav class="navbar  navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="">tindog</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
-        <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item">
-            
-              <a class="nav-link" href="">Contact</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
-          </li>
-          </ul>
-      </ul>
-   </div>
-  </nav>
+ 
+<nav class="navbar  navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="">tindog</a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#footer">Conntact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#cta">Download</a>
+        </li>
+    </ul>
+ </div>
+</nav>
+  
   
     <!-- Title -->
 
@@ -461,15 +496,9 @@ padding: 3% 2%;
 
   <section id="cta">
 
-
-
-    <h3>Find the True Love of Your Dog's Life Today.</h3>
-
-    <button type="button">Download</button>
-
-    <button type="button">Download</button>
-
-
+    <h3 class="roza">Find the True Love of Your Dog's Life Today.</h3>
+    <button class="download-buttom btn btn-lg btn-dark" type="button"><i class="fab fa-apple"></i>Download</button>
+      <button class="download-buttom btn btn-lg btn-light" type="button"><i class="fab fa-google-play"></i>Download</button>
 
   </section>
 
@@ -477,16 +506,23 @@ padding: 3% 2%;
 
 
 
+
+  
+
+
+
   <!-- Footer -->
 
-
-
   <footer id="footer">
-
-
+    <i class="ikone fab fa-facebook-f"></i>
+    <i class="ikone fab fa-twitter"></i>
+    <i class="ikone fab fa-instagram"></i>
+    <i class="ikone fas fa-envelope"></i>
 
     <p>© Copyright 2018 TinDog</p>
+    
 
+  </footer>
 
 
   </footer>
